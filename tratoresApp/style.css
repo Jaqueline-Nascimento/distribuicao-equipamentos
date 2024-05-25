@@ -1,0 +1,153 @@
+
+.distribuicao{
+
+    margin-top: 10;
+    margin-bottom: .5rem;
+    
+    font-weight: 500;
+    line-height: 1.2;
+    color:white;
+    background-color: #080372; /* Azul */
+    text-align: center;
+    padding: auto;
+
+
+}
+
+
+
+.btn{
+    color:white;
+    background-color: #080372; /* Azul */
+    border: solid black
+}
+
+
+
+legend {
+    position: absolute;
+    top: -0.15em; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 10px;
+    background: #080372; /* Mesma cor do fundo */
+    color: white; /* Cor do texto */
+    border-radius: 5px; /* Opcional, para arredondar os cantos */
+    font-size: 1.25em; /* Ajuste o tamanho da fonte */
+}
+
+
+
+
+.titulo-distribuicao{
+	
+	position:relative;
+	width: auto;
+	height: 100%;
+	page-break-before: always;
+	background-color: rgb(11, 9, 131);
+	color: #f8f9fa;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	
+	font-size: 30px;
+	text-align: center;
+
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	text-align: center;
+  	vertical-align: middle;
+  }
+  
+  th {
+	background-color: rgb(11, 9, 131);
+	color: white;
+	text-align: center;
+  	vertical-align: middle;
+  }
+
+  td{
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    
+  }
+
+#oficina-rocadeira{
+    background-color: #f6f1f1;
+    padding: 10px;
+    margin-bottom: 10%;
+    
+}
+
+.container1{
+	border: 1px solid #063580; /* Borda azul escuro */
+	display: block; /* Mostrar em bloco para que fiquem um embaixo do outro */
+    margin-top: 5px; /* Margem superior entre os campos */
+    background-color: #f2f2f2; /* Fundo cinza claro */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Margem inferior para criar espaço entre as caixas de turno */
+}
+
+.container2{
+	border: 1px solid #063580; /* Borda azul escuro */
+	display: block; /* Mostrar em bloco para que fiquem um embaixo do outro */
+    margin-top: 5px; /* Margem superior entre os campos */
+    background-color: #f2f2f2; /* Fundo cinza claro */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Margem inferior para criar espaço entre as caixas de turno */
+}
+
+.container3{
+	border: 1px solid #063580; /* Borda azul escuro */
+	display: block; /* Mostrar em bloco para que fiquem um embaixo do outro */
+    margin-top: 5px; /* Margem superior entre os campos */
+    background-color: #f2f2f2; /* Fundo cinza claro */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Margem inferior para criar espaço entre as caixas de turno */
+}
+
+.btn-finalizar{
+	background-color: #063580;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 90px;
+	margin-right: 50px;
+	text-align: right;
+
+}
+
+.caixaobservacao{
+	display: flex;
+  	justify-content: center;	
+	width: 50%;
+  }
+
+  .tituloobs{
+	font-size: 100%;
+	padding: 10px;
+	
+  }
+
+.btn-finalizar{
+	background-color: #063580;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 90px;
+	margin-right: 50px;
+	text-align: right;
+
+}
+
+.direita {
+	text-align: right;/*colocando o botao finalizar do lado direito*/
+  }

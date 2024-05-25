@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuição de Equipamentos - LRB</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        .empresa-name {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .table-dark-row {
+            background-color: #590a0a;
+            
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="distribuicao">Distribuição de Equipamentos - LRB</h1>
+        <form>
+            
+            <p></p>
+            <p></p>
+            <div class="row mb-4"></div>
+            <fieldset class="border border-dark border-2 p-3 mb-3 position-relative">
+                <legend class="w-auto px-2 position-absolute top-0 start-50 translate-middle-x ">MICROTRATOR - TOBATA - P35</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        
+                        <div class="mb-3">
+                            <div class="container mt-5">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr style="background-color: #dc7317;">
+                                            <th class="empresa-name" colspan="2" style="background-color: #325dc2">EMPRESA</th>
+                                            <th class="empresa-name"style="background-color: #325dc2">BELMAC</th>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <th style="background-color: #5397df">PREFIXO</th>
+                                            <th style="background-color: #5397df">STATUS</th>
+                                            <th style="background-color: #5397df">LOGRADOURO</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-dark-row">
+                                            <td>X216</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                                
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <td>X217</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <td>X218</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <td>X232</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="empresa-name" colspan="2" style="background-color: #e0600a">EMPRESA</th>
+                                            <th class="empresa-name" style="background-color: #e0600a">COMLURB</th>
+                                        </tr>
+                                        <tr>
+                                            <th style="background-color: #e8a67a">PREFIXO</th>
+                                            <th style="background-color: #e8a67a">STATUS</th>
+                                            <th style="background-color: #e8a67a">LOGRADOURO</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <<tr class="table-dark-row" style="border: #e0600a">
+                                            <td>H32</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <td >H33</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <td>H43</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <td>H44</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <td>H48</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <td>H49</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <td>H61</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                        <tr class="table-dark-row">
+                                            <td>H63</td>
+                                            <td><select class="form-select" name="status" id="Status">
+                                                <option value="SELECIONE A GERENCIA">Status</option>
+                                                <option value="Oficina">Oficina</option>
+                                                <option value="Parado na Gerência">Parado na Gerência</option>
+                                                <option value="Quebrado na Gerencia">Quebrado na Gerencia</option>
+                                                <option value="Emprestado">Emprestado</option>
+                                            </select></td>
+                                            <td><input type="text" class="form-control" placeholder="Logradouro"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <img src="TOBATA.png" alt="Imagem" class="img-fluid">
+                    </div>
+                </div>
+            
+            <div class="mb-3">
+                <label for="observacao" class="form-label">Observação</label>
+                <textarea class="form-control" id="observacao" name="observacao" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </fieldset>
+        </form>
+        <div class="text-center mt-4">
+            <a href="index.html" class="btn btn-primary btn-lg">Voltar para a Página Inicial</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

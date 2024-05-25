@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+
+<head>
+    <title>Bom Dia Equipamentos-LRB</title>
+    <!-- Inclua o arquivo CSS do Bootstrap -->
+	<!-- Inclua o arquivo CSS do Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Adicione a meta tag de codificação -->
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+	<style>
+		/* Estilo para o contêiner das cotas */
+		.container {
+			page-break-before: always; /* Insere uma quebra de página antes do contêiner das cotas */
+			position:relative;
+			text-align: center; /* Centraliza o texto */
+			table-layout: auto;
+			margin-bottom: auto;
+			background-color: rgb(11, 9, 131);
+			color: #f8f9fa;
+			position: relative;
+			display: -moz-box;
+			font-family:Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			font-size: 300%;
+			padding-left: 10%;
+			padding-right: 10%;
+
+			
+		}
+
+		body{
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+	</style>
+
+</head>
+<body>
+    <p></p>
+	<div class="container">
+		<h2>Bom Dia Equipamentos - LRB</h2>
+		<p></p>
+	</div>
+
+    <form id="myForm" action="https://script.google.com/macros/s/AKfycbxz0yiBiNsHEybAnnL-ZDNw0O84ptUyMXEX8p1BImgcmSJUwLEMPaKBMyYBZHxkgZ4s/exec" method="post" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label for="data-select">Selecione uma Data:</label>
+            <input type="date" class="form-control" id="data-select" onchange="mostrarEstoque()" required>
+        </div>
+        <div class="form-group">
+            <label for="gerencia-select">Selecione uma Gerência:</label>
+            <select class="form-control" id="gerencia-select" onchange="mostrarEstoque()" required>
+                <option value="">Selecione uma opção</option>
+                <option value="BG16F">BG16F</option>
+                <option value="BG16J">BG16J</option>
+                <option value="BG24B">BG24B</option>
+                <option value="BG24R">BG24R</option>
+                <option value="BGE">BGE</option>
+            </select>
+        </div>	
+        <div id="estoque"></div>
+	</div>
+    <br>
+	<div class="container-distribuicao">
+		<h3 class="titulo-distribuicao">Mapa de distribuição</h3>
+		<p></p>
+	<br>
+    <script>
+		function adicionarLinha(containerId) {
+		  const container = document.getElementById(containerId);
+		  const novaLinha = document.createElement("span");
+		  novaLinha.className = "turno-field";
+		  novaLinha.innerHTML = `
+			
+			<label for="logradouro">Logradouro:</label>
+			<input type="text" id="logradouro" name="logradouro" placeholder="Nome do Logradouro">
+			<input type="number" id="qtd_Rocadeiras" name="qtd_Rocadeiras" placeholder="Qtd de Roçadeiras">
+			<input type="number" id="qtd_soprador" name="qtd_soprador" placeholder="Qtd de Sopradores">
+			<input type="number" id="qtd_motopoda" name="qtd_motopoda" placeholder="Qtd de Motopodas">
+			<input type="number" id="qtd_motoserra" name="qtd_motoserra" placeholder="Qtd de Motosserras">
+			<button type="button" class="remove-logradouro-btn">-</button>
+			<button type="button" class="add-logradouro-btn">+</button>
+			<br><br>
+		  `;
+		  container.appendChild(novaLinha);
+		  
+		}
+	
+		function adicionarListenerBotoes(containerId) {
+			const container = document.getElementById(containerId);
+			const botaoAdicao = container.querySelector(".add-logradouro-btn");
+			botaoAdicao.addEventListener("click", function() {
+				adicionarLinha(containerId);
+			});
+		
+			const botoesRemocao = container.querySelectorAll(".remove-logradouro-btn");
+			botoesRemocao.forEach(function(botao) {
+				botao.addEventListener("click", function() {
+					botao.parentElement.remove();
+				});
+			});
+		}
+		
+		</script>
+
+
+
+
+    </div>
+    <div id="container1" class="container1">
+		<h3>1º Turno</h3>
+		<script>
+		  adicionarLinha('container1');
+		</script>
+	  </div>
+	
+	  <div id="container2" class="container2">
+		<h3>2º Turno</h3>
+		<script>
+		  adicionarLinha('container2');
+		</script>
+	  </div>
+	
+	  <div id="container3" class="container3">
+		<h3>3º Turno</h3>
+		<script>
+		  adicionarLinha('container3');
+		</script>
+	  </div>
+	</div>
+	</form>
+
+    <!-- Caixa de Observações -->
+    <div class="caixaobservacao">
+        <h5 class="tituloobs" id="tituloobs" >Observações:</h5>
+        <textarea class="form-control" id="observacoes" name="observacoes" rows="3" cols="20" ></textarea>
+    </div>
+
+    <div class="direita">
+		<button type="button" class="btn-finalizar" onclick="enviarDados()">Finalizar</button>
+	</div>
+	<div class="text-center mt-4">
+		<a href="index.html" class="btn btn-primary btn-lg">Voltar para a Página Inicial</a>
+	</div>
+    
+
+   <!-- Inclua o arquivo JavaScript do jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Inclua o arquivo JavaScript do Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<!-- Inclua o arquivo CSS do jQuery UI -->
+	
+	<script>src="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"</script>
+	<!-- Inclua o arquivo JavaScript do jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Inclua o arquivo JavaScript do jQuery UI -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+	
+	<!-- Inclua o arquivo JavaScript personalizado -->
+	<script src="script.js"></script>
+
+</body>
+</html>

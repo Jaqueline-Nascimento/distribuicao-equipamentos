@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuição de Equipamentos - LRB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="distribuicao">Distribuição de Equipamentos - LRB</h1>
+        <form>
+            
+            <p></p>
+            <p></p>
+            <div class="row mb-4"></div>
+            <fieldset class="border border-dark border-2 p-3 mb-3 position-relative">
+                <legend class="w-auto px-2 position-absolute top-0 start-50 translate-middle-x ">Varredeira de médio porte - P13B</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="equipamento" class="form-label">Selecione o Equipamento:</label>
+                            <select class="form-select" id="equipamento" name="equipamento">
+                                <option value="D110">D110</option>
+                                <option value="D111">D111</option>
+                                <option value="D114">D114</option>
+                                <option value="D125">D125</option>                             
+                                <option value="D127">D127</option>
+                                <option value="RESERVA">RESERVA</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="status" class="form-label">Turno:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="1turno" name="status" value="1turno">
+                                <label class="form-check-label" for="1turno">1º Turno</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="2turno" name="status" value="2turno">
+                                <label class="form-check-label" for="2turno">2º Turno</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="3turno" name="status" value="3turno">
+                                <label class="form-check-label" for="3turno">3º Turno</label>
+                            </div>
+                            <p></p>
+                            <label for="status" class="form-label">Status:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="Operando" name="status" value="Operando">
+                                <label class="form-check-label" for="Operando">Operando</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="Nao_operando" name="status" value="Nao_operando">
+                                <label class="form-check-label" for="Nao_operando">Não operando</label>
+                            </div>
+                            <div class="border p-3 mt-3">
+                                <fieldset class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="Oficina" name="substatus" value="Oficina">
+                                        <label class="form-check-label" for="Oficina">Oficina</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="Disponivel_nao_operando" name="substatus" value="Disponivel_nao_operando">
+                                        <label class="form-check-label" for="Disponivel_nao_operando">Disponível não operando</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="Quebrado_na_gerencia" name="substatus" value="Quebrado_na_gerencia">
+                                        <label class="form-check-label" for="Quebrado_na_gerencia">Quebrado na gerência</label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="radio" id="Emprestado" name="substatus" value="Emprestado">
+                                        <label class="form-check-label ms-1" for="Emprestado">Emprestado</label>
+                                        <input type="text" class="form-control ms-3" name="gerencia_emprestimo" placeholder="Digite a gerência" style="max-width: 200px;">
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Logradouro" class="form-label">Logradouros:</label>
+                                    <input type="text" class="form-control" id="Logradouro" name="Logradouro" placeholder="Logradouro 1º TURNO">
+                                    <input type="text" class="form-control" id="Logradouro" name="Logradouro" placeholder="Logradouro 2º TURNO">
+                                    <input type="text" class="form-control" id="Logradouro" name="Logradouro" placeholder="Logradouro 3º TURNO">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <img src="varredeira_compacta.png" alt="Imagem" class="img-fluid">
+                    </div>
+                </div>
+            
+            <div class="mb-3">
+                <label for="observacao" class="form-label">Observação</label>
+                <textarea class="form-control" id="observacao" name="observacao" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </fieldset>
+        </form>
+        <div class="text-center mt-4">
+            <a href="index.html" class="btn btn-primary btn-lg">Voltar para a Página Inicial</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

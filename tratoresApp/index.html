@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamentos de Grande porte - LRB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<style>
+    body{
+        background-color: #f17b3b; 
+    }
+    .table-custom-header {
+            background-color: #004085; /* Azul escuro */
+            color: white;
+        }
+</style>
+</head>
+
+<body>
+    
+    <div class="container mt-5 text-center">
+        <h1 class="distribuicao">Distribuição de Equipamentos na Operação - LRB</h1>
+        <div class="row mb-4">
+            <div class="col-md-2 d-flex align-items-start justify-content-center">
+                <img src="logo_comlurb.jpeg" alt="Imagem" class="img-fluid">
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="GERENCIA" class="form-label">Selecione a Gerência:</label>
+                        <select class="form-select" name="GERENCIA" id="GERENCIA">
+                            <option value="SELECIONE A GERENCIA">Selecione a Gerência</option>
+                            <option value="BG16F">BG16F</option>
+                            <option value="BG16J">BG16J</option>
+                            <option value="BG24B">BG24B</option>
+                            <option value="BG24R">BG24R</option>
+                            <option value="BGE">BGE</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="date" class="form-label">Selecione a data:</label>
+                        <input type="date" class="form-control" id="date" name="date">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="nav nav-pills mb-3 justify-content-left" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a href="https://www.google.com/maps/d/edit?mid=1QCpJR84tyZpQLScTM6wDqMXdQ2jAOLkl&usp=sharing" class="btn btn-primary btn-lg">Mapa</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a href="indexpeqporte.html" class="btn btn-primary btn-lg">EQP Pequeno Porte</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a href="index1.html" class="btn btn-primary btn-lg">Escorpião</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a href="index2.html" class="btn btn-primary btn-lg">Capinadeira</a>
+            </li>
+            <li class="nav-item">
+                <a href="index3P23.html" class="btn btn-primary btn-lg">Pá carregadeira - P23</a>
+            </li>
+            <li class="nav-item">
+                <a href="index4P23A.html" class="btn btn-primary btn-lg">Pá carregadeira Articulada - P23A</a>
+            </li>
+            <li class="nav-item">
+                <a href="index5P20.html" class="btn btn-primary btn-lg">Mini Pá - P20</a>
+            </li>
+            <li class="nav-item">
+                <a href="index6P16.html" class="btn btn-primary btn-lg">Trator com Implemento</a>
+            </li>
+            <li class="nav-item">
+                <a href="index7spyder.html" class="btn btn-primary btn-lg">Spyder</a>
+            </li>
+            <li class="nav-item">
+                <a href="index8girozero.html" class="btn btn-primary btn-lg">Giro Zero</a>
+            </li>
+            <li class="nav-item">
+                <a href="index9VARREDEIRACOMPACTA.html" class="btn btn-primary btn-lg">Varredeira de médio porte</a>
+            </li>
+            <li class="nav-item">
+                <a href="indexEQP.html" class="btn btn-primary btn-lg">Microtrator - TOBATA</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="btn btn-primary btn-lg">status de preenchimento</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="btn btn-primary btn-lg">Gráficos</a>
+            </li>
+        </ul>
+        <div class="table-responsive mt-4">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">EQUIPAMENTO</th>
+                        <th scope="col">BG16F</th>
+                        <th scope="col">BG16J</th>
+                        <th scope="col">BG24B</th>
+                        <th scope="col">BG24R</th>
+                        <th scope="col">BGE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GIRO ZERO</td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>MICROTRATOR - TOBATA</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>MINI PÁ</td>
+                        <td>1</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>PÁ CARREGADEIRA</td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>PÁ ARTICULADA</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>SEMI REBOQUE MINI PÁ</td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>SPYDER</td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>TRATOR CAPINADEIRA - PAPA MATO</td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>TRATOR COM BRAÇO ROÇADOR - ESCORPIÃO</td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td>2</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>TRATOR COM IMPLEMENTO</td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>VARREDEIRA COMPACTA</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+</body>
+</html>
